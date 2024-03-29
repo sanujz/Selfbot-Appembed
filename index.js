@@ -1,4 +1,7 @@
 const fs = require("fs");
+if (!fs.existsSync('./commands')) {
+    fs.mkdirSync('./commands');
+}
 const path = require('path');
 const { Client } = require('discord.js-selfbot-v13');
 const Discord = require('discord.js-selfbot-v13');
