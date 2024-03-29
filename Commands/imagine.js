@@ -11,7 +11,7 @@ if (fs.existsSync('config.json')) {
   config = JSON.parse(fs.readFileSync('config.json'));
 }
 const configuration = new Configuration({
-  apiKey: config.Open_AI_API_Key,
+  apiKey: process.env.Open_AI_API_Key,
 });
 
 const openai = new OpenAIApi(configuration);
