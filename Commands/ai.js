@@ -10,7 +10,7 @@ if (fs.existsSync('config.json')) {
 }
 
 const configuration = new Configuration({
-  apiKey: process.env.Open_AI_API_Key,
+  apiKey: config.Open_AI_API_Key,
 });
 
 const openai = new OpenAIApi(configuration);
