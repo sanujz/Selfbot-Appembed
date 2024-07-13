@@ -1,9 +1,9 @@
+const fs = require("fs");
 const path = require('path');
 const { Client } = require('discord.js-selfbot-v13');
 const Discord = require('discord.js-selfbot-v13');
 const { Appembed } = require('kyz');
 const Sequelize = require('sequelize');
-const keep_alive = require('./keep_alive.js')
 
 let config = {};
 
